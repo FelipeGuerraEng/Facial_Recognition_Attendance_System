@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from Home import face_rec
 
-st.set_page_config(page_title='Reporting', layout='wide')
+#st.set_page_config(page_title='Reporting', layout='wide')
 st.subheader('Reporting')
 
 # Recuperar datos de registros y mostrar en Report.py

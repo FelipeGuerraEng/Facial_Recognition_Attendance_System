@@ -6,7 +6,7 @@ from streamlit_webrtc import webrtc_streamer
 import av
 
 
-st.set_page_config(page_title='Registration Form')
+#st.set_page_config(page_title='Registration Form')
 st.subheader('Registration Form')
 
 ## inicializar el formulario de registro
@@ -16,6 +16,8 @@ registration_form = face_rec.RegistrationForm()
 person_name = st.text_input(label='Name',placeholder='First & Last Name')
 role = st.selectbox(label='Select your Role',options=('Student',
                                                       'Teacher'))
+
+st.info("Check the registered data in the report tab after submit button is pressed")
 
 # Paso-2: Obtener las caracteristicas de esa persona
 def video_callback_func(frame):
